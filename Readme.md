@@ -30,6 +30,9 @@ Join room.
 
 Lets migrate projects to web platform!
 
+npm i -g peer
+peerjs --port 3001
+
 ## Botstrapped
 
 Botstrapped with:
