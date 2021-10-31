@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Barklim.github.io/mugenServer",
   "name": "mugenserver",
   "version": "1.0.0",
   "description": "- [MugenServer](#mugenserver)\r - [How use](#hold-start)\r   - [install](#install)\r   - [run](#run)\r - [Contributing](contributing)\r - [Botstrapped](#botstrapped)\r - [Meta](#Meta)",
@@ -10,11 +11,13 @@
     "uuid": "^8.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.14",
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC"
