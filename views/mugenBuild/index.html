@@ -2,25 +2,14 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-
-    <!-- For ejs -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script>
-      const ROOM_ID = "<%= roomId %>"
-    </script>
-    <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
-    <script src="/socket.io/socket.io.js" defer></script>
-    <script src="script.js" defer></script>
-    <title>M.u.g.e.n.</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Emscripten-Generated Code</title>
     <style>
       body {
         font-family: arial;
         margin: 0;
         padding: none;
-		    background-color: black;
+		background-color: black;
       }
 
       .emscripten { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
@@ -116,32 +105,15 @@
         font-family: 'Lucida Console', Monaco, monospace;
         outline: none;
       }
-
-      // For ejs
-      #video-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 300px);
-        grid-auto-rows: 300px;
-      }
-    
-      video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      } 
-
     </style>
   </head>
   <body onkeydown="preventUseOfDefaultKeys(event);">
-
-    <!-- For ejs -->
-    <div id="video-grid"></div>
   
-	  <center id="testlogo">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="243" height="194" viewBox="0 0 243 194">
-      <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-      <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<center id="testlogo">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="243" height="194" viewBox="0 0 243 194">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
 </x:xmpmeta>
@@ -262,16 +234,13 @@
         })();
 
         var script = document.createElement('script');
-        // <!-- For ejs -->
-        // script.src = "mugenBuild/game.js";
         script.src = "game.js";
         document.body.appendChild(script);
 
 </script>
-
-<!-- For ejs -->
-<!-- <script type="text/javascript" src="mugenBuild/assets.js"></script> -->
 <script type="text/javascript" src="assets.js"></script>
+<script type="text/javascript" src="tracks.js"></script>
+<script type="text/javascript" src="debug.js"></script>
 
 <script>
 window.onload = function(){
